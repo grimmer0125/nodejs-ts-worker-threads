@@ -5,8 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node --experimental-worker dist/index.js 5000000000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js 5000000000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node -r ./node_modules/ts-node/register src/index.ts",
+    "dev2": "ts-node src/index.ts"
   },
   "keywords": [
     "NodeJS",
@@ -17,5 +19,8 @@
   "devDependencies": {
     "@types/node": "^12.7.5",
     "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "ts-node": "^8.10.1"
   }
 }
