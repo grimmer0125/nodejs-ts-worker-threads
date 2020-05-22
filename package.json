@@ -9,8 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node -r ./node_modules/ts-node/register src/index.ts",
     "dev2": "ts-node src/index.ts",
-    "dev3": "node -r ./node_modules/ts-node/register src/testthreads.ts",
-    "dev4": "ts-node src/testthreads.ts"
+    "devthreads": "node -r ./node_modules/ts-node/register src/testthreads.ts",
+    "devthreads2": "ts-node src/testthreads.ts"
   },
   "keywords": [
     "NodeJS",
