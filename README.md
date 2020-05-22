@@ -13,6 +13,9 @@ Two examples:
 
 1. Intall yarn first, https://classic.yarnpkg.com/en/docs/install/, then 
 2. Install packages: `yarn install`
-3. `yarn devthreads` / `yarn devthreads2` or use VSCode F5 to debug 
+
+## Run 
+
+`yarn devthreads` / `yarn devthreads2` or use VSCode F5 to debug 
 
 
