@@ -8,14 +8,16 @@
             "request": "launch",
             "name": "Debug Node.js index.ts which using worker_thread",
             "runtimeArgs": ["-r", "${workspaceFolder}/node_modules/ts-node/register"],
-            "args": ["${workspaceFolder}/src/index.ts"]
+            "args": ["${workspaceFolder}/src/index.ts"],
+            "outputCapture": "std"
         },
         {
             "type": "node",
             "request": "launch",
             "name": "Debug Node.js index.ts which using threads",
             "runtimeArgs": ["-r", "${workspaceFolder}/node_modules/ts-node/register"],
-            "args": ["${workspaceFolder}/src/testthreads.ts"]
+            "args": ["${workspaceFolder}/src/testthreads.ts"],
+            "outputCapture": "std"
         }
     ]
 }
