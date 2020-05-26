@@ -5,6 +5,7 @@ Two examples:
 2. threads.js library example, https://www.npmjs.com/package/threads and it wrapps web worker & node.js worker thread. It's better than built in since ts-node works in most of the cases. ~It works perfectly~. One trickt is to add `outputCapture` in VSCode's launch.json to show the logs in worker threads. Two issues 
     1. One limitation is that VSCode breakpoints will not stop at the code in worker threads.
     2. Sometimes `node -r ts-node/register --inspect index.ts` will fail to run the worker thread code in some `circular dependency` case
+    3. `await spawn(new Worker("./workers/auth"))`, there is another parameter {timeout} and you many set it a larger time
 
 
 ## Requirements
